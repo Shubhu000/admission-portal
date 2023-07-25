@@ -129,7 +129,6 @@ const AddStudents = ({ show, handleClose }) => {
     }
   };
   return (
-    <main className="form-signin x">
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Addmission Form</Modal.Title>
@@ -292,7 +291,6 @@ const AddStudents = ({ show, handleClose }) => {
           </form>
         </Modal.Body>
       </Modal>
-    </main>
   );
 };
 
