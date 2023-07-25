@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const CLERK_URL = "http://localhost:5000/api/";
+const CLERK_URL = "https://admission-portal-api.vercel.app/api/";
 
 export const loginUser = createAsyncThunk(
   "clerk/loginUser",
