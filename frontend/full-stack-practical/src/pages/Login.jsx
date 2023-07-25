@@ -55,7 +55,7 @@ const Login = () => {
   };
 
   return (
-    <main className="form-signin">
+    <main className="form-signin" style={{ paddingTop: "30vh" }}>
       <form onSubmit={handleSubmit}>
         <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
 
