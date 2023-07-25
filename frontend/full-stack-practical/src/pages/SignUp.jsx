@@ -116,7 +116,7 @@ const SignUp = () => {
         </div>
         <div className="form-floating mb-2">
           <input
-            type="numbers"
+            type="number"
             name="phone"
             onChange={(e) => handleChange(e)}
             className="form-control"
