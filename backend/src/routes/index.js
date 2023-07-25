@@ -5,11 +5,11 @@ const Student = require("../models/Student");
 const multer = require("multer");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const path = require("path");
 
 //Config multer
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    console.log(path.join(__dirname, "../../uploads"));
     cb(null, path.join(__dirname, "../../uploads"));
   },
   filename: (req, file, cb) => {
