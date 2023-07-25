@@ -19,6 +19,8 @@ const validate = (values) => {
 
   if (!values.phone) {
     errors.phone = "Phone number is required";
+  }else if (!/^\d{10}$/.test(values.phone)) {
+    errors.phone = "Phone number must be 10 digits";
   }
 
   if (!values.secretId) {
