@@ -8,8 +8,18 @@
   ],
   "routes": [
     {
+      "src": "/models/(.*)",
+      "dest": "src/models/$1",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/routes/(.*)",
+      "dest": "src/routes/$1",
+      "methods": ["GET"]
+    },
+    {
       "src": "/(.*)",
-      "dest": "/src/routes/index.js",
+      "dest": "src/index.js",
       "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
       "headers": {
         "Access-Control-Allow-Origin": "*"
