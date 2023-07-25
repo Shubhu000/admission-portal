@@ -8,6 +8,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use("/api", router);
+
+app.get("/", (req, res) => {
+  res.send("Server is running!");
+});
+
 mongoose
   .connect(`${process.env.DB_URL}`)
   .then(() => console.log("DB connected"))
