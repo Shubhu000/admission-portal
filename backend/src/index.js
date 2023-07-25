@@ -18,9 +18,9 @@ app.get("/", (req, res) => {
 });
 
 mongoose
-  .connect(`${process.env.DB_URL}`)
+  .connect("mongodb+srv://shubhudamania00:ySwPMUnjiirpBh7t@full-stack.zlwl6tk.mongodb.net/?retryWrites=true&w=majority")
   .then(() => console.log("DB connected"))
   .catch((err) => console.log(err));
-app.listen(process.env.PORT, () =>
-  console.log("Server is Running at" + process.env.PORT)
+app.listen(5000, () =>
+  console.log("Server is Running at 5000")
 );
